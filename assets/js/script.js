@@ -1,5 +1,5 @@
 let score = 0;
-let timer = 30;
+let timer = 10;
 
 let timerId = document.getElementById("timer");
 let scoreId = document.getElementById("score");
@@ -17,7 +17,6 @@ startButton.addEventListener('click', () => {
 
 function startGame() {
 
-
     bart.addEventListener('click', () => {
         score++;
         scoreId.textContent = score + ' hits';
@@ -26,24 +25,27 @@ function startGame() {
     let contHeight = container.offsetHeight;
     let contWidth = container.offsetWidth;
 
-    setInterval(() => {
-        let rTop = Math.random() * (contHeight - 100);
+    let intervalId = setInterval(() => {
+        let rTop = Math.random() * (contHeight - 300);
         let rLeft = Math.random() * (contWidth - 100);
 
         bart.style.position = 'absolute';
         bart.style.top = rTop + "px";
         bart.style.left = rLeft + "px";
-    }, 1500);
+
+        gameTimer()
+    }, 1000);
 
     function gameTimer() {
         timer --;
         timerId.textContent = timer + ' seconds';
-
-        if (timer <= 0) {
-            clearInterval(timerId);
+        
+        if (timer === 0) {
+            clearInterval(intervalId);
             alert('Sorry Bart\'s parents found him. Your total hits are: ' + score);
-        }
+        } 
     }
 
-    gameTimer();
+    reset();
 }
+
