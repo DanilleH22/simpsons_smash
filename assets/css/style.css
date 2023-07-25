@@ -60,3 +60,7 @@ button {
 
 /* Bart*/
 
+img {
+    background: transparent;
+    height: 100px
+}
