@@ -1,8 +1,7 @@
 let score = 0;
 let timer = 10;
-let level = 1;
-let maxLevel = 3;
 let intervalId;
+
 
 let timerId = document.getElementById("timer");
 let scoreId = document.getElementById("score");
@@ -29,7 +28,6 @@ function startGame() {
     bart.addEventListener('click', () => {
         score++;
         scoreId.textContent = score + ' hits';
-        checkLevel();
     });
 
     let contHeight = container.offsetHeight;
@@ -42,54 +40,35 @@ function startGame() {
         bart.style.position = 'absolute';
         bart.style.top = rTop + "px";
         bart.style.left = rLeft + "px";
-    }, 1000);
 
-    gameTimer();
+        gameTimer();
+    }, 1500);
+
+    function gameTimer() {
+        timer--;
+        timerId.textContent = timer + ' seconds';
+        if (timer === 0) {
+            clearInterval(intervalId);
+            reset();
+            alert('Sorry Bart\'s parents found him. Your total hits are: ' + score);
+        }
+    }
+
+
 }
 
 /** Timer */
-function gameTimer() {
-    timer--;
-    timerId.textContent = timer + ' seconds';
 
-    if (timer === 0) {
-        clearInterval(intervalId);
-        if (level < maxLevel) {
-            alert(' Your total hits are: ' + score + '. You are now on going to Level ' + level);
-            reset(levelUp);
-        } else {
-            alert('Congratulations! You have completed all levels. Your total hits are: ' + score);
-        }
-    }
-}
-
-/** Checks level */
-function checkLevel() {
-    if (score % === 5 && level === 1) {
-        levelUp();
-    } else if (score % === 12 && level === 2) {
-        levelUp();
-    } else if (score  % === 18 && level === 3) {
-        levelUp();
-    }
-}
-
-/** Level up */
-function levelUp() {
-    clearInterval(intervalId);
-    level++;
+function reset() {
+    score = 0;
     timer = 10;
+    intervalId;
     bart.style.display = 'none';
-    intervalId = setInterval(() => {
-        let rTop = Math.random() * (contHeight - 100);
-        let rLeft = Math.random() * (contWidth - 100);
 
-        bart.style.position = 'absolute';
-        bart.style.top = rTop + "px";
-        bart.style.left = rLeft + "px";
+    startButton.addEventListener('click', () => {
+        container.appendChild(bart);
+        bart.style.display = 'block';
+        startGame();
+    });
 
-        gameTimer();
-    }, 1000);
 }
-
-
