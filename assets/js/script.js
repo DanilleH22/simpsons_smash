@@ -121,7 +121,7 @@ function levelTwo() {
 
         bully1.style.position = 'absolute';
         bully1.style.top = rTop + "px";
-        bbully1.style.left = rLeft + "px";
+        bully1.style.left = rLeft + "px";
 
         bully2.style.position = 'absolute';
         bully2.style.top = rTop + "px";
