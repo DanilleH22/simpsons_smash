@@ -1,5 +1,5 @@
 * {
-    background-image: url('/assets/images/clouds.JPG');
+    background-image: url('../images/clouds.JPG');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 /* Game container */
 .game_container {
-    overflow: hidden;
+    overflow: clip;
 }
 
 .game_container h1 {
@@ -40,7 +40,7 @@ button {
     font-size: 30px;
 }
 
-.score_text {
+.scoring {
     position: absolute;
     top: 13%;
     left: 30%;
@@ -48,7 +48,7 @@ button {
     background: transparent;
 }
 
-.time_text {
+.timeing {
     position: absolute;
     right: 35%;
     top: 13%;
@@ -57,6 +57,11 @@ button {
 }
 
 /* Game area */
+
+
+.game_area {
+    position: relative;
+}
 
 /* Bart*/
 
