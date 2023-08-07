@@ -7,13 +7,19 @@
 }
 
 /* Game container */
-.game_container {
-    overflow: clip;
-}
 
-.game_container h1 {
+
+.temp h1 {
     text-align: center;
     font-size: 45px;
+}
+
+.game_container {
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background: transparent;
 }
 
 button {
@@ -27,45 +33,53 @@ button {
 }
 
 #start {
-    position: absolute;
-    top: 13%;
-    left: 5%;
+    position: relative;
     font-size: 30px;
 }
 
 #instructions {
-    position: absolute;
-    right: 10%;
-    top: 13%;
+    position: relative;
     font-size: 30px;
 }
 
 .scoring {
-    position: absolute;
-    top: 13%;
-    left: 30%;
+    position: relative;
     font-size: 34px;
     background: transparent;
 }
 
 .timeing {
-    position: absolute;
-    right: 35%;
-    top: 13%;
+    position: relative;
     font-size: 34px;
+    background: transparent;
+}
+
+#timer {
+    background: transparent;
+}
+
+#score {
     background: transparent;
 }
 
 /* Game area */
 
-
-.game_area {
-    position: relative;
+.gamearea {
+    overflow: hidden;
+    width: 100%;
+    height: 86%;
 }
 
 /* Bart*/
 
 img {
     background: transparent;
-    height: 100px
+    height: 100px;
+}
+
+
+
+.game_container {
+    flex-wrap: 1;
+    justify-content: align;
 }

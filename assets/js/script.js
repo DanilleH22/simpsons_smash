@@ -6,19 +6,20 @@ let timer = 10;
 let timerId = document.getElementById("timer");
 let scoreId = document.getElementById("score");
 let startButton = document.getElementById("start");
-let bart = document.getElementById("bartface");
+let bart = document.getElementById("face");
 let gameContainer = document.querySelector(".gamearea");
 let instructions = document.getElementById("instructions");
 
-bart.style.display = "none";
+let faceDisplay = bart.style.display = "none";
 
-startButton.addEventListener('click', () => {
+let gameBegin = startButton.addEventListener('click', () => {
     bart.style.display = 'block';
     startGame();
 });
 
 instructions.addEventListener('click', () => {
-    window.confirm('Instructions');
+    window.blurt('How to play', 'When Bart appears on screen you must click him.');
+    /* Insert Blurt file to use for instructions */
 });
 
 /** Level one start of the game */
@@ -36,16 +37,15 @@ function startGame() {
         let rTop = Math.random() * (contHeight - 100);
         let rLeft = Math.random() * (contWidth - 100);
 
-        bart.style.position = 'absolute';
+        bart.style.position = 'relative';
         bart.style.top = rTop + "px";
         bart.style.left = rLeft + "px";
 
         gameTimer();
 
-    }, 1500);
+    }, 1200);
 
     reset();
-
 }
 
 /** Timer */
@@ -56,7 +56,7 @@ function gameTimer() {
     timerId.textContent = timer + ' seconds';
     if (timer === 0) {
         clearInterval(intervalId);
-        alert('That\s all the time available. Your totale hits were:' + score);
+        alert('Bart\s parents are here scram! Your total hits were:' + score);
     }
 
 }
@@ -65,14 +65,19 @@ function gameTimer() {
 /** Reset game */
 
 function reset() {
-    score = 0;
+    score;
     timer = 10;
-    bart.style.display = 'none';
-
-    startButton.addEventListener('click', () => {
-        con;
-        bart.style.display = 'block';
-        startGame();
-    });
+    faceDisplay;
+    gameBegin;
 
 }
+
+
+/**
+ * Install .blurt() for pop up of instructions. Check with tutors if that will be do-able.
+ * Bart is not moving around his container.
+ * Score is increasing by 2 when second game is launched
+ * Leveel 2 ? 
+ * README needs starting.
+ * Create Instructions guide.
+ */
