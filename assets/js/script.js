@@ -19,14 +19,14 @@ let gameBegin = startButton.addEventListener('click', () => {
  * Funtion for instructions pop up
  */
 
-let alert = document.getElementById("instructionContainer");
+let alertContainer = document.getElementById("instructionContainer");
 
 function instructions() {
-    alert.style.display = "block";
+    alertContainer.style.display = "block";
 }
 
 function hide() {
-    alert.style.display = "none";
+    alertContainer.style.display = "none";
 }
 
 /** Level one start of the game */
@@ -52,14 +52,16 @@ function startGame() {
 
     }, 1200);
 
+
+
     reset();
     faceDisplay;
 }
 
-
-
+/**
+ * Increase the score 
+ */
 function incrementScore() {
-
     if (timer > 0) {
         score++;
         scoreId.textContent = score + ' hits';
@@ -69,7 +71,6 @@ function incrementScore() {
 /** Timer */
 
 function gameTimer() {
-
     timer--;
     timerId.textContent = timer + ' seconds';
     if (timer === 0) {
