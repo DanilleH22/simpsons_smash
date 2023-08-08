@@ -1,5 +1,5 @@
 let score = 0;
-let timer = 10;
+let timer = 30;
 
 let timerId = document.getElementById("timer");
 let scoreId = document.getElementById("score");
@@ -64,7 +64,7 @@ function startGame() {
 function incrementScore() {
     if (timer > 0) {
         score++;
-        scoreId.textContent = score + ' hits';
+        scoreId.textContent = score;
     }
 }
 
@@ -75,7 +75,7 @@ function gameTimer() {
     timerId.textContent = timer + ' seconds';
     if (timer === 0) {
         clearInterval(intervalId);
-        alert('Bart\s parents are here scram! Your total hits were:' + score);
+        alert('You are out of time! Your total hits were:' + score);
     }
 
 }
@@ -85,15 +85,10 @@ function gameTimer() {
 
 function reset() {
     score = 0;
-    timer = 10;
+    timer = 30;
     faceDisplay;
 
 
 }
 
 
-/**
- * Score is increasing by 2 when second game is launched
- * Level 2 ? 
- * README needs starting.
- */
