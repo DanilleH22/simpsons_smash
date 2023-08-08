@@ -53,16 +53,16 @@ function startGame() {
     }, 1200);
 
     reset();
-
+    faceDisplay;
 }
 
 
 
 function incrementScore() {
-    score++;
-    scoreId.textContent = score + ' hits';
-    if (timer === 0) {
-        clearInterval(score);
+
+    if (timer > 0) {
+        score++;
+        scoreId.textContent = score + ' hits';
     }
 }
 
