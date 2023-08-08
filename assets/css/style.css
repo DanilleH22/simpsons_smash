@@ -23,7 +23,7 @@
 }
 
 button {
-    background: transparent;
+
     color: black;
     border: 12px 12px white;
     border-radius: 6px;
@@ -33,6 +33,7 @@ button {
 }
 
 #start {
+    background: transparent;
     position: relative;
     font-size: 30px;
 }
@@ -82,4 +83,42 @@ img {
 .game_container {
     flex-wrap: 1;
     justify-content: align;
+}
+
+/* Instructions box pop up */
+
+#instructionContainer {
+    display: none;
+    background: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50, -50);
+    width: 1000px;
+    height: 250px;
+    box-shadow: 5px 10px 20px grey;
+    text-align: center;
+}
+
+#instructionContainer h1 {
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+#instructionText {
+    vertical-align: middle;
+    font-size: large;
+    padding: 20px;
+    margin: 20px;
+    background: transparent;
+
+}
+
+#ok {
+    font-size: medium;
+    display: block;
+    width: 60px;
+    height: 25px;
+    background-color: #fff;
+    margin: 5px auto;
 }

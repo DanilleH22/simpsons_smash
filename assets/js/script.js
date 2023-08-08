@@ -8,7 +8,7 @@ let scoreId = document.getElementById("score");
 let startButton = document.getElementById("start");
 let bart = document.getElementById("face");
 let gameContainer = document.querySelector(".gamearea");
-let instructions = document.getElementById("instructions");
+
 
 let faceDisplay = bart.style.display = "none";
 
@@ -17,10 +17,19 @@ let gameBegin = startButton.addEventListener('click', () => {
     startGame();
 });
 
-instructions.addEventListener('click', () => {
-    window.blurt('How to play', 'When Bart appears on screen you must click him.');
-    /* Insert Blurt file to use for instructions */
-});
+/**
+ * Funtion for instructions pop up
+ */
+
+let alert = document.getElementById("instructionContainer");
+
+function instructions() {
+    alert.style.display = "block";
+}
+
+function hide() {
+    alert.style.display = "none";
+}
 
 /** Level one start of the game */
 
@@ -65,7 +74,7 @@ function gameTimer() {
 /** Reset game */
 
 function reset() {
-    score;
+    score = 0;
     timer = 10;
     faceDisplay;
     gameBegin;
@@ -74,10 +83,8 @@ function reset() {
 
 
 /**
- * Install .blurt() for pop up of instructions. Check with tutors if that will be do-able.
- * Bart is not moving around his container.
  * Score is increasing by 2 when second game is launched
- * Leveel 2 ? 
+ * Level 2 ? 
  * README needs starting.
  * Create Instructions guide.
  */

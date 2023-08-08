@@ -21,9 +21,21 @@
     <div class="game_container">
 
         <button id="start">Start Game</button>
-        <button id="instructions">Instructions</button>
         <p class="scoring">Score:<span id="score"></span></p>
         <p class="timeing">Time left: <span id="timer"></span></p>
+        <button id="instructions" onclick="instructions()">Instructions</button>
+
+        <div id="instructionContainer">
+            <h1>How to play:</h1>
+            <p id="instructionText">Bart’s known to be causing mayhem in the area. However today’s your
+                lucky day, it’s the fun fair, you get 30 seconds to hit Bart.
+                <br>
+                Every time you see Bart’s face on screen click it before he moves to a
+                new position. After 30 seconds your time will be up and a pop up will
+                show you your total score.
+            </p>
+            <button id="ok" onclick="hide()">Ok</button>
+        </div>
     </div>
     <div class="gamearea">
         <img src="assets/images/bart.PNG" alt="Bart Simpsons Face" id="face">
