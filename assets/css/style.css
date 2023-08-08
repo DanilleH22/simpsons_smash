@@ -39,6 +39,7 @@ button {
 }
 
 #instructions {
+    background: transparent;
     position: relative;
     font-size: 30px;
 }
@@ -121,4 +122,12 @@ img {
     height: 25px;
     background-color: #fff;
     margin: 5px auto;
+}
+
+/* Media query screen sizes */
+
+/* for screens smaller than 700px wide */
+
+@media only screen and (max-width: 700px) {
+    font-size: 25px;
 }

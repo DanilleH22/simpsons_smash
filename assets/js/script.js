@@ -1,8 +1,6 @@
 let score = 0;
 let timer = 10;
 
-
-
 let timerId = document.getElementById("timer");
 let scoreId = document.getElementById("score");
 let startButton = document.getElementById("start");
@@ -34,10 +32,10 @@ function hide() {
 /** Level one start of the game */
 
 function startGame() {
-    bart.addEventListener('click', () => {
-        score++;
-        scoreId.textContent = score + ' hits';
-    });
+
+
+    bart.removeEventListener('click', incrementScore);
+    bart.addEventListener('click', incrementScore);
 
     let contHeight = gameContainer.offsetHeight;
     let contWidth = gameContainer.offsetWidth;
@@ -55,6 +53,17 @@ function startGame() {
     }, 1200);
 
     reset();
+
+}
+
+
+
+function incrementScore() {
+    score++;
+    scoreId.textContent = score + ' hits';
+    if (timer === 0) {
+        clearInterval(score);
+    }
 }
 
 /** Timer */
@@ -77,7 +86,7 @@ function reset() {
     score = 0;
     timer = 10;
     faceDisplay;
-    gameBegin;
+
 
 }
 
@@ -86,5 +95,4 @@ function reset() {
  * Score is increasing by 2 when second game is launched
  * Level 2 ? 
  * README needs starting.
- * Create Instructions guide.
  */
