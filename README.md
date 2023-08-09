@@ -67,8 +67,8 @@ The live link to the website can be found here: <https://danilleh22.github.io/si
 
 ### Content
 
-The structure for styling the instructions pop up was arom a yyoutuber linked here:
-Part of the game set up had been used from the video linked below, however it was used as a starting reference.
+The structure for styling the instructions pop up was from a youtuber linked here: [Instructions Popup](https://www.youtube.com/watch?v=-XwrQsHxtZs)
+Part of the game set up had been used from the video linked below, however it was used as a starting reference, video link: [Target Game](https://www.youtube.com/watch?v=KJ-wHLczee0&t=1297s)
 
 ### Media
 
