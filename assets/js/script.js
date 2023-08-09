@@ -8,7 +8,7 @@ let bart = document.getElementById("face");
 let gameContainer = document.querySelector(".gamearea");
 
 
-let faceDisplay = bart.style.display = "none";
+bart.style.display = "none";
 
 
 startButton.addEventListener('click', () => {
@@ -54,7 +54,6 @@ function startGame() {
 
     }, 1000);
 
-    faceDisplay;
     reset();
 }
 
@@ -86,7 +85,4 @@ function gameTimer() {
 function reset() {
     score = 0;
     timer = 30;
-
-
-
 }
