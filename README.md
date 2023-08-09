@@ -18,7 +18,7 @@ Game functions include:
 3. Score - shows the player how many hits they have so far.
 4. Timer - the timer shows how long the player has in the game.
 
-1[WebsiteHead](./assets/images/WebsiteHead.png)
+[WebsiteHead](./assets/images/WebsiteHead.png)
 
 ### Target
 
@@ -67,8 +67,9 @@ The live link to the website can be found here: <https://danilleh22.github.io/si
 
 ### Content
 
-The structure for styling the instructions pop up was from a youtuber linked here: [Instructions Popup](https://www.youtube.com/watch?v=-XwrQsHxtZs)
-Part of the game set up had been used from the video linked below, however it was used as a starting reference, video link: [Target Game](https://www.youtube.com/watch?v=KJ-wHLczee0&t=1297s)
+The structure for styling the instructions pop up was from a youtuber linked here: [Instructions Popup](https://www.youtube.com/watch?v=-XwrQsHxtZs).
+
+Part of the game set up had been used from the video linked below, however it was used as a starting reference, video link: [Target Game](https://www.youtube.com/watch?v=KJ-wHLczee0&t=1297s).
 
 ### Media
 
