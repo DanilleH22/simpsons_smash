@@ -10,9 +10,11 @@ let gameContainer = document.querySelector(".gamearea");
 
 let faceDisplay = bart.style.display = "none";
 
-let gameBegin = startButton.addEventListener('click', () => {
+
+startButton.addEventListener('click', () => {
     bart.style.display = 'block';
     startGame();
+
 });
 
 /**
@@ -50,12 +52,10 @@ function startGame() {
 
         gameTimer();
 
-    }, 1200);
+    }, 1000);
 
-
-
-    reset();
     faceDisplay;
+    reset();
 }
 
 /**
@@ -86,9 +86,7 @@ function gameTimer() {
 function reset() {
     score = 0;
     timer = 30;
-    faceDisplay;
+
 
 
 }
-
-
