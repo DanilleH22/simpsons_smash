@@ -157,7 +157,7 @@ img {
 
     #instructionContainer {
         width: 75vw;
-        height: 250px;
+        height: 300px;
         left: 8%;
     }
 
@@ -198,5 +198,16 @@ img {
         background: transparent;
         width: 100vw;
         height: 65vh;
+    }
+
+    #instructionContainer {
+        width: 75vw;
+        height: 310px;
+    }
+
+    #instructionText {
+        font-size: 14px;
+        padding: 5px;
+        margin: 5px;
     }
 }
