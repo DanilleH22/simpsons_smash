@@ -65,8 +65,8 @@ The webside was deployed through a hosting website called GitHub. To deploy:
 
 1. All commits was pushed to GitHub
 2. The setting tab in GitHub for the repository was clicked
-3. In the source section, the Master Branch was clicked from the dropdown menu
-4. The page was then saved and created a live link
+3. Pages was clicked, then main Branch was clicked from the dropdown menu
+4. The page was then saved and a live link was created
 
 The live link to the website can be found here: <https://danilleh22.github.io/simpsons_smash/>
 
