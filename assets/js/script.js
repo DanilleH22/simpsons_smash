@@ -7,6 +7,8 @@ let startButton = document.getElementById("start");
 let bart = document.getElementById("face");
 let gameContainer = document.querySelector(".gamearea");
 
+let contHeight
+let contWidth
 
 bart.style.display = "none";
 
@@ -39,8 +41,8 @@ function startGame() {
     bart.removeEventListener('click', incrementScore);
     bart.addEventListener('click', incrementScore);
 
-    let contHeight = gameContainer.offsetHeight;
-    let contWidth = gameContainer.offsetWidth;
+    contHeight = gameContainer.offsetHeight;
+    contWidth = gameContainer.offsetWidth;
 
     intervalId = setInterval(() => {
         let rTop = Math.random() * (contHeight - 100);
