@@ -51,6 +51,9 @@ HTML
 * No errors were returned when passing through the official W3C validator
 CSS
 * No errors were found when passing through the official (Jigsaw) validator
+* JSHint had warned of two unused variables, however they were called in the index.html file. The codes it has been used in from the HTML file are referenced below:
+  - <button id="ok" onclick="hide()">Ok</button>
+  - <button id="instructions" onclick="instructions()">Instructions</button>
 
 ## Deployment
 
