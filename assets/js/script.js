@@ -7,11 +7,11 @@ let startButton = document.getElementById("start");
 let bart = document.getElementById("face");
 let gameContainer = document.querySelector(".gamearea");
 
-let contHeight
-let contWidth
+let contHeight;
+let contWidth;
+let intervalId;
 
 bart.style.display = "none";
-
 
 startButton.addEventListener('click', () => {
     bart.style.display = 'block';
@@ -55,6 +55,7 @@ function startGame() {
         gameTimer();
 
     }, 1000);
+
 
     reset();
 }
