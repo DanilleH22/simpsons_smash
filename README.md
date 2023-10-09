@@ -1,9 +1,13 @@
 # Smash Simpsons
 
 Smash the Simpsons is a game that is about hitting the Simpson characters in the face.
+Why we used Bart for the first level, is because if you have watched a Simpsons episode, you would know Bart is the troublesome one. So we use Bart back as a way of getting back the 'naughty' Simpson. People would love to take a hit at the Simpson, causing trouble.
+This game is for The Simpsons fans, anyone who loves them and games about them would like this game. The audience age for the game is 8 - 99. This game is perfect for anyone trying to pass the time, for instance on break, or if you are on the bus somewhere.
+The reason people would love to come back and play is because it is a fun and light hearted game. If you got a score of 3 you would want to come back and beat the score, which can get quite addicting.
+
 The game starts with the first level which is hitting a target as it moves around the screen.
 
-The game uses javascript to have the targets and begin the game. HTML was used to crerate the structure and CSS to style and deign the game.
+The game uses javascript to have the targets and begin the game. HTML was used to create the structure and CSS to style and design the game.
 
 Currently the game has one level and you can only use one simpson character. In the future I am to add more levels, where level 2 there are more Simpsons characters but you only get a point for clicking Bart. Level two would be a kind of wheres Waldo level. In the future I would also allow players to choose the target they would like to hit.
 
