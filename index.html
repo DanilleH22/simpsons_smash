@@ -17,9 +17,12 @@
 </head>
 
 <body>
+    <!--Game title on the page-->
     <div class="temp">
         <h1>Smash the Simpsons</h1>
     </div>
+
+    <!--Container for score, start game button, timer, and instruction button-->
 
     <div class="game_container">
 
@@ -28,6 +31,7 @@
         <p class="timeing">Time left: <span id="timer"></span></p>
         <button id="instructions" onclick="instructions()">Instructions</button>
 
+        <!--Instructions on how to play the game, and ok button to close tab-->
         <div id="instructionContainer">
             <h1>How to play:</h1>
             <p id="instructionText">Bart’s known to be causing mayhem in the area. However today’s your
@@ -40,7 +44,9 @@
             <button id="ok" onclick="hide()">Ok</button>
         </div>
     </div>
+    <!--Game area to contain Bart's face-->
     <div class="gamearea">
+        <!--Bart's face-->
         <img src="assets/images/bart.PNG" alt="Bart Simpsons Face" id="face">
     </div>
 
