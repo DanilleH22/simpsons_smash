@@ -193,6 +193,7 @@ img {
 
 }
 
+/* for screens smaller than 400px wide */
 @media only screen and (max-width: 400px) {
     .gamearea {
         background: transparent;
