@@ -1,5 +1,6 @@
 let score = 0;
 let timer = 30;
+let contHeight, contWidth, intervalId;
 
 // variables linking code index.html to script.js
 let timerId = document.getElementById("timer");
@@ -9,43 +10,57 @@ let bart = document.getElementById("face");
 let gameContainer = document.querySelector(".gamearea");
 let alertContainer = document.getElementById("instructionContainer");
 
-let contHeight;
-let contWidth;
-let intervalId;
 
+// Bart display hidden until called on
 bart.style.display = "none";
 
-// event listener to start game and show Bart's face
+// event listener to start game and when get show Bart's face
 startButton.addEventListener('click', () => {
     bart.style.display = 'block';
     startGame();
 
 });
 
+/**
+ * When USers click on the button tag it will open the instruction
+ * box showing them how to play the game 
+ */
 function instructions() {
     alertContainer.style.display = "block";
 }
 
+/**
+ * When the ok button is closed the hide function is activated
+ * closing the previous instructions box
+ */
 function hide() {
     alertContainer.style.display = "none";
 }
 
-/** Level one start of the game */
-// function that allows the timer to begin, move Bart's face randomly over screen,
-// increase points for clicking Bart's face and reset game when timer is finished 
+/** 
+ * This function controls the game 
+ * When Bart is cliicked the score increases
+ * The game timer is then set and Bart is positioned 
+ * randomly throughout the screen
+ * Game timer 
+ * */
+
 function startGame() {
 
-
+    // When clciked Bart he is removed and the score increases 
     bart.removeEventListener('click', incrementScore);
     bart.addEventListener('click', incrementScore);
 
+    // Set container height and width for game 
     contHeight = gameContainer.offsetHeight;
     contWidth = gameContainer.offsetWidth;
 
+    //Change position of Bart during Timer randomly
     intervalId = setInterval(() => {
         let rTop = Math.random() * (contHeight - 100);
         let rLeft = Math.random() * (contWidth - 100);
 
+        // Postition Bart's face randomly throughout container
         bart.style.position = 'relative';
         bart.style.top = rTop + "px";
         bart.style.left = rLeft + "px";
@@ -59,9 +74,9 @@ function startGame() {
 }
 
 /**
- * Increase the score 
+ * This function allows users to increase the score
+ * as long as the timer is on
  */
-// Increase the score everytime Bart's face is clicked
 function incrementScore() {
     if (timer > 0) {
         score++;
@@ -69,8 +84,10 @@ function incrementScore() {
     }
 }
 
-/** Timer */
-// Timer is to go down when started, when it hit's 0 an alert message appears
+/** 
+ * When timer is started it reduces and tells the user how long they have left
+ * When finished users are given their score along with a alert message
+ */
 function gameTimer() {
     timer--;
     timerId.textContent = timer + ' seconds';
@@ -82,8 +99,9 @@ function gameTimer() {
 }
 
 
-/** Reset game */
-// when the game is finished it resets variables
+/** 
+ * This function resets the game variables score & timer 
+ */
 function reset() {
     score = 0;
     timer = 30;
