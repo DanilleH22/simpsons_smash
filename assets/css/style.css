@@ -7,12 +7,13 @@
     color: black;
 }
 
-/* Game container */
+/* --------- Game container -----------------*/
 .temp h1 {
     text-align: center;
     font-size: 45px;
 }
 
+/* Container for game */
 .game_container {
     margin: 10px;
     display: flex;
@@ -31,6 +32,7 @@ button {
     padding: 0 10px;
 }
 
+/* Start game button */
 #start {
     background: transparent;
     position: relative;
@@ -38,6 +40,7 @@ button {
     height: 50px;
 }
 
+/* Instructions button */
 #instructions {
     background: transparent;
     position: relative;
@@ -45,12 +48,14 @@ button {
     height: 50px;
 }
 
+/* Users score box  */
 .scoring {
     position: relative;
     font-size: 34px;
     background: transparent;
 }
 
+/* Tiimer box */
 .timeing {
     position: relative;
     font-size: 34px;
@@ -58,18 +63,27 @@ button {
 
 }
 
+/* Timer numbers */
 #timer {
     background: transparent;
     height: 50px;
 }
 
+/* Score number */
 #score {
     background: transparent;
     height: 50px;
 }
 
-/* Game area */
+/* -------------- Game area ----------- */
 
+/* Container for game */
+.game_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Area for bart */
 .gamearea {
     overflow: hidden;
     width: 100%;
@@ -77,22 +91,16 @@ button {
     background: transparent;
 }
 
-/* Bart*/
+/* --------------------- Bart ------------------------- */
 
 img {
     background: transparent;
     height: 100px;
 }
 
+/* -------------------- Instruction --------------------- */
 
-
-.game_container {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-/* Instructions box pop up */
-
+/* Instructions box  container pop up */
 #instructionContainer {
     display: none;
     background: white;
@@ -105,11 +113,13 @@ img {
     text-align: center;
 }
 
+/* container for Instruction  */
 #instructionContainer h1 {
     border-bottom: 2px solid black;
     background: transparent;
 }
 
+/* Instruction box text */
 #instructionText {
     vertical-align: middle;
     font-size: 22px;
@@ -119,6 +129,7 @@ img {
 
 }
 
+/* Button to close */
 #ok {
     font-size: medium;
     display: block;
@@ -128,18 +139,21 @@ img {
     margin: 5px auto;
 }
 
-/* Media query screen sizes */
+/* --------------------------- Media query screen sizes --------------- */
 
 /* for screens smaller than 700px wide */
 
 @media only screen and (max-width: 900px) {
 
+    /* Area for bart */
     .gamearea {
         background: transparent;
         width: 100vw;
         height: 70vh;
     }
 
+
+    /* Game container */
     .game_container {
         flex-flow: column;
         margin: auto;
@@ -155,36 +169,42 @@ img {
         font-size: 35px;
     }
 
+    /* Instructions box container */
     #instructionContainer {
         width: 75vw;
         height: 300px;
         left: 8%;
     }
 
+    /* Instructtion text */
     #instructionText {
         font-size: 14px;
         padding: 10px;
         margin: 15px;
     }
 
+    /* Instruction button */
     #instructions {
         position: relative;
         font-size: 20px;
         width: 150px;
     }
 
+    /* Scoring box */
     .scoring {
         position: relative;
         font-size: 24px;
         height: 50px;
     }
 
+    /* Timer box */
     .timeing {
         position: relative;
         font-size: 24px;
         height: 50px;
     }
 
+    /* Start button */
     #start {
         position: relative;
         font-size: 24px;
@@ -193,19 +213,23 @@ img {
 
 }
 
-/* for screens smaller than 400px wide */
+/* ------------- for screens smaller than 400px wide ------------ */
 @media only screen and (max-width: 400px) {
+
+   /* Area for bart */
     .gamearea {
         background: transparent;
         width: 100vw;
         height: 65vh;
     }
 
+    /* Instruction container */
     #instructionContainer {
         width: 75vw;
         height: 310px;
     }
 
+    /* Instruction box text */
     #instructionText {
         font-size: 14px;
         padding: 5px;
