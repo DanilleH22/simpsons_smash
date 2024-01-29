@@ -43,8 +43,15 @@ The instructon pop up box, explains how to play the game and the amount of time 
 
 ### Validator Testing
 
-Testing on different devices has been tone to text the responsitivity of the game. On smaller screen sizes the game functions have been shrunk to fit in the screen and still leave enough space for the game area for the target.
+Testing on different devices has been done to text the responsitivity of the game. On smaller screen sizes the game functions have been shrunk to fit in the screen and still leave enough space for the game area for the target.
 
+<!-- Screen size 1
+
+Secreen size 2
+
+Screen size 3  -->
+
+###
 A bug that had been recurring in the game was the score incrementing. The core would increment by 1 for the first round and 2 for the second and so on. The player was also able to still get points after the timer had finished. To fix this a score incrementing function was created, and a if statement was used in it. Along with adding and removing an event listener for the function incrementing score and then creating a new incrementing score.
 
 Another bug that hda been faced was creating level two.
@@ -52,21 +59,31 @@ Another bug that hda been faced was creating level two.
 Lastly a bug that had to be fixed was the timer, the timer would continue decreasing past 0. So to fix this a new function was created outside the game and linked to in the intervalID.
 HTML
 
-* No errors were returned when passing through the official W3C validator
-CSS
+* No errors were returned when passing through the official W3C validator CSS
+![W3C Validator](./assets/images/W3c-validator.png)
+
 * No errors were found when passing through the official (Jigsaw) validator
+![Jigsaw Validator](./assets/images/Validator_v3.png)
+
 * JSHint had warned of two unused variables, however they were called in the index.html file. The codes it has been used in from the HTML file are referenced below:
   - <button id="ok" onclick="hide()">Ok</button>
   - <button id="instructions" onclick="instructions()">Instructions</button>
+![JSHint](./assets/images/JSHint.png)
 
 ## Deployment
 
 The webside was deployed through a hosting website called GitHub. To deploy:
-
-1. All commits was pushed to GitHub
-2. The setting tab in GitHub for the repository was clicked
-3. Pages was clicked, then main Branch was clicked from the dropdown menu
-4. The page was then saved and a live link was created
+1. Create a Github repository
+2. Open on GitPod
+3. Create game with Javascript, Html & CSS
+4. Validated code had no errors 
+5. Ran code on website by typing 'python3 -m http.server' in the Command Line
+6. Any bugs were fixed and noted
+7. Tested code on JSHint, W3Cvalidator 
+8. All commits was pushed to GitHub
+9. The setting tab in GitHub for the repository was clicked
+10. Pages was clicked, then main Branch was clicked from the dropdown menu
+11. The page was then saved and a live link was created
 
 The live link to the website can be found here: <https://danilleh22.github.io/simpsons_smash/>
 
