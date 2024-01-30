@@ -46,13 +46,9 @@ Currently the game has one level and you can only use one simpson character. In 
 
 ### Validator Testing
 
-Testing on different devices has been done to text the responsitivity of the game. On smaller screen sizes the game functions have been shrunk to fit in the screen and still leave enough space for the game area for the target.
+Testing on different devices has been done to text the responsitivity of the game. On smaller screen sizes the game functions have been shrunk to fit in the screen and still leave enough space for the game area for the target. This can be noted as the gameplay will be seen on the Am I responsive webiste below. The screen sizes were also tested throughout production by using Chrome development and chosing different screen sizes to check on.
 
-<!-- Screen size 1
-
-Secreen size 2
-
-Screen size 3  -->
+[Smash The Simpson](./assets/images/amiresponsive.png)
 
 ###
 A bug that had been recurring in the game was the score incrementing. The core would increment by 1 for the first round and 2 for the second and so on. The player was also able to still get points after the timer had finished. To fix this a score incrementing function was created, and a if statement was used in it. Along with adding and removing an event listener for the function incrementing score and then creating a new incrementing score.
