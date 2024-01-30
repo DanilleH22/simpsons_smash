@@ -1,4 +1,4 @@
-# Smash Simpsons
+# Smash The Simpsons
 
 ![Smash The Simpson](./assets/images/amiresponsive.png)
 
@@ -79,14 +79,15 @@ When setting up to do deployment these are the necessary steps taken:
 1. Create a Github repository
 2. Open on GitPod
 3. Create game with Javascript, Html & CSS
-4. Validated code had no errors with JSHint for JavaScript and W3C Validator for HTML and CSS 
-5. Ran code on website by typing 'python3 -m http.server' in the Command Line
-6. Any bugs were fixed and noted
-7. Re-validated code with JSHint for JavaScript and W3C Validator for HTML and CSS 
-8. All commits was pushed to GitHub
-9. The setting tab in GitHub for the repository was clicked
-10. Pages was clicked, then main Branch was clicked from the dropdown menu
-11. The page was then saved and a live link was created
+4. Ran code on website by typing 'python3 -m http.server' in the Command Line
+5. Any bugs were fixed and noted and commited to GitHub
+6. Validated code had no errors with JSHint for JavaScript and W3C Validator for HTML and CSS 
+7. All commits was pushed to GitHub
+8. Open Smash the Simpsons repository
+9. Click settings tab in repository
+10. Click Pages on the side bar
+11. Under section called Branch click main from the drop down menu
+12. Save the page and then a live link is generated
 
 The live link to the website can be found here: [Smash the Simpson](https://danilleh22.github.io/simpsons_smash/)
 
