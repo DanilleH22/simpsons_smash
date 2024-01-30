@@ -68,35 +68,35 @@ HTML
 * No errors were found when passing through the official (Jigsaw) validator
 ![Jigsaw Validator](./assets/images/Validator_v3.png)
 
-* JSHint had warned of two unused variables, however they were called in the index.html file. The codes it has been used in from the HTML file are referenced below:
+* JSHint has not shoown no problems with the Javascript code. JSHint had warned of two unused variables, however they were called in the index.html file. The codes it has been used in from the HTML file are referenced below:
   - <button id="ok" onclick="hide()">Ok</button>
   - <button id="instructions" onclick="instructions()">Instructions</button>
 ![JSHint](./assets/images/JSHint.png)
 
 ## Deployment
 
-The webside was deployed through a hosting website called GitHub. To deploy:
+When setting up to do deployment these are the necessary steps taken:
 1. Create a Github repository
 2. Open on GitPod
 3. Create game with Javascript, Html & CSS
-4. Validated code had no errors 
+4. Validated code had no errors with JSHint for JavaScript and W3C Validator for HTML and CSS 
 5. Ran code on website by typing 'python3 -m http.server' in the Command Line
 6. Any bugs were fixed and noted
-7. Tested code on JSHint, W3Cvalidator 
+7. Re-validated code with JSHint for JavaScript and W3C Validator for HTML and CSS 
 8. All commits was pushed to GitHub
 9. The setting tab in GitHub for the repository was clicked
 10. Pages was clicked, then main Branch was clicked from the dropdown menu
 11. The page was then saved and a live link was created
 
-The live link to the website can be found here: ![Instructions Popup](https://danilleh22.github.io/simpsons_smash/)
+The live link to the website can be found here: ![Smash the Simpson]<https://danilleh22.github.io/simpsons_smash/>
 
 ## Credits
 
 ### Content
 
-The structure for styling the instructions pop up was from a youtuber linked here: ![Instructions Popup](https://www.youtube.com/watch?v=-XwrQsHxtZs).
+The structure for styling the instructions pop up was from a youtuber linked here: [Instructions Popup]<https://www.youtube.com/watch?v=-XwrQsHxtZs>
 
-Part of the game set up had been used from the video linked below, however it was used as a starting reference, video link: ![Target Game](https://www.youtube.com/watch?v=KJ-wHLczee0&t=1297s)
+Part of the game set up had been used from the video linked below, however it was used as a starting reference, video link: [Target Game]<https://www.youtube.com/watch?v=KJ-wHLczee0&t=1297s>
 
 ### Media
 
