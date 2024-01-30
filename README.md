@@ -1,15 +1,14 @@
 # Smash Simpsons
 
-Smash the Simpsons is a game that is about hitting the Simpson characters in the face.
-Why we used Bart for the first level, is because if you have watched a Simpsons episode, you would know Bart is the troublesome one. So we use Bart back as a way of getting back the 'naughty' Simpson. People would love to take a hit at the Simpson, causing trouble.
-This game is for The Simpsons fans, anyone who loves them and games about them would like this game. The audience age for the game is 8 - 99. This game is perfect for anyone trying to pass the time, for instance on break, or if you are on the bus somewhere.
-The reason people would love to come back and play is because it is a fun and light hearted game. If you got a score of 3 you would want to come back and beat the score, which can get quite addicting.
+[Smash The Simpson](./assets/images/amiresponsive.png)
 
-The game starts with the first level which is hitting a target as it moves around the screen.
+Smash the Simpsons is a game that is about hitting the Simpson characters in the face. It is a great game to pass the time 
 
-The game uses javascript to have the targets and begin the game. HTML was used to create the structure and CSS to style and design the game.
 
-Currently the game has one level and you can only use one simpson character. In the future I am to add more levels, where level 2 there are more Simpsons characters but you only get a point for clicking Bart. Level two would be a kind of wheres Waldo level. In the future I would also allow players to choose the target they would like to hit.
+
+Smash the Simpsons is an interactive web-based game where players aim to hit a moving image of the Simpson's face as it randomly appears in different positions on the screen. This engaging and fast-paced game tests players' reflexes and timing, offering a fun and humorous way to enjoy the beloved characters of the Simpsons series. The game makes for a great choice for quick entertainment and a lighthearted challenge for fans of the show and casual gamers alike.
+
+Currently the game only lets you smash Bart Simpson in the face. The reason we have used Bart is of the is because he is the naughtiest Simpson. So we use Bart back as a way of getting back the 'naughty' Simpson. We know he gets on peoples nerves, so why not get him back for it. The age of the game would be for anyone from 13 to 55, but anyone of any age could pay as its quite easy to understand how to play and actually play. With its addictive gameplay and ever-changing challenges, players will want to come back to play more, as they try to beat their scores and improve their reaction times in this amusing and engaging game.
 
 ## Features
 
@@ -38,6 +37,10 @@ This is the background of the whole game, which uses the image of the clousd fro
 
 The instructon pop up box, explains how to play the game and the amount of time the player has.
 ![Instuctions](./assets/images/Instructions.png)
+
+### Future Implementations 
+
+Currently the game has one level and you can only use one simpson character. In the future I am to add more levels, where level 2 there are more Simpsons characters but you only get a point for clicking Bart. Level two would be a kind of wheres Waldo level. In the future I would also allow players to choose the target they would like to hit.
 
 ## Testing
 
@@ -85,15 +88,15 @@ The webside was deployed through a hosting website called GitHub. To deploy:
 10. Pages was clicked, then main Branch was clicked from the dropdown menu
 11. The page was then saved and a live link was created
 
-The live link to the website can be found here: <https://danilleh22.github.io/simpsons_smash/>
+The live link to the website can be found here: ![Instructions Popup](https://danilleh22.github.io/simpsons_smash/)
 
 ## Credits
 
 ### Content
 
-The structure for styling the instructions pop up was from a youtuber linked here: [Instructions Popup](https://www.youtube.com/watch?v=-XwrQsHxtZs).
+The structure for styling the instructions pop up was from a youtuber linked here: ![Instructions Popup](https://www.youtube.com/watch?v=-XwrQsHxtZs).
 
-Part of the game set up had been used from the video linked below, however it was used as a starting reference, video link: [Target Game](https://www.youtube.com/watch?v=KJ-wHLczee0&t=1297s).
+Part of the game set up had been used from the video linked below, however it was used as a starting reference, video link: ![Target Game](https://www.youtube.com/watch?v=KJ-wHLczee0&t=1297s)
 
 ### Media
 
