@@ -1,15 +1,15 @@
-let score = 0;
-let timer = 30;
-let contHeight, contWidth, intervalId;
+// Variables needed for start of the start of the game 
+let score = 0;  // Variable to keep track of the player's score
+let timer = 30; // Variable for the game timer (in seconds)
+let contHeight, contWidth, intervalId; // Variables for container dimensions and interval ID
 
 // variables linking code index.html to script.js
-let timerId = document.getElementById("timer");
-let scoreId = document.getElementById("score");
-let startButton = document.getElementById("start");
-let bart = document.getElementById("face");
-let gameContainer = document.querySelector(".gamearea");
-let alertContainer = document.getElementById("instructionContainer");
-
+let timerId = document.getElementById("timer"); // Links to the timer display element in HTML
+let scoreId = document.getElementById("score"); // Links to the score display element in HTML
+let startButton = document.getElementById("start"); // Links to the start button element in HTML
+let bart = document.getElementById("face"); // Links to the 'Bart' element in HTML
+let gameContainer = document.querySelector(".gamearea"); // Links to the game area container in HTML
+let alertContainer = document.getElementById("instructionContainer"); // Links to the instruction container element in HTML
 
 // Bart display hidden until called on
 bart.style.display = "none";
