@@ -55,10 +55,10 @@ Lastly a bug that had to be fixed was the timer, the timer would continue decrea
 HTML
 
 * No errors were returned when passing through the official W3C validator CSS
-![W3C Validator](./assets/images/W3c-validator.png)
+![W3C Validator](./assets/images/w3c-html.png)
 
-* No errors were found when passing through the official (Jigsaw) validator
-![Jigsaw Validator](./assets/images/Validator_v3.png)
+* No errors were found when passing through the official Html validator
+![HTML Validator](./assets/images/Validator_v3.png)
 
 * JSHint has not shoown no problems with the Javascript code. JSHint had warned of two unused variables, however they were called in the index.html file. The codes it has been used in from the HTML file are referenced below:
   - '< button id="ok" onclick="hide()">Ok< /button>'
