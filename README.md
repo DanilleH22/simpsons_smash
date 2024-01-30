@@ -1,10 +1,6 @@
 # Smash Simpsons
 
-[Smash The Simpson](./assets/images/amiresponsive.png)
-
-Smash the Simpsons is a game that is about hitting the Simpson characters in the face. It is a great game to pass the time 
-
-
+![Smash The Simpson](./assets/images/amiresponsive.png)
 
 Smash the Simpsons is an interactive web-based game where players aim to hit a moving image of the Simpson's face as it randomly appears in different positions on the screen. This engaging and fast-paced game tests players' reflexes and timing, offering a fun and humorous way to enjoy the beloved characters of the Simpsons series. The game makes for a great choice for quick entertainment and a lighthearted challenge for fans of the show and casual gamers alike.
 
@@ -21,7 +17,7 @@ Game functions include:
 3. Score - shows the player how many hits they have so far.
 4. Timer - the timer shows how long the player has in the game.
 
-[WebsiteHead](./assets/images/WebsiteHead.png)
+![WebsiteHead](./assets/images/WebsiteHead.png)
 
 ### Target
 
@@ -84,7 +80,7 @@ When setting up to do deployment these are the necessary steps taken:
 10. Pages was clicked, then main Branch was clicked from the dropdown menu
 11. The page was then saved and a live link was created
 
-The live link to the website can be found here: ![Smash the Simpson]<https://danilleh22.github.io/simpsons_smash/>
+The live link to the website can be found here: [Smash the Simpson]https://danilleh22.github.io/simpsons_smash/>
 
 ## Credits
 
