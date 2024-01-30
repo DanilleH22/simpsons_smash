@@ -26,7 +26,7 @@ The face of the character the player must click, to get a point. The target curr
 
 ### Background
 
-This is the background of the whole game, which uses the image of the clousd from the Simspsons theme song.
+This is the background of the whole game, which uses the image of the cloud from the Simspsons theme song.
 ![GameScreen](./assets/images/GameScreen.png)
 
 ### Instructions pop up
@@ -40,30 +40,35 @@ Currently the game has one level and you can only use one simpson character. In 
 
 ## Testing
 
-### Validator Testing
+### Responstivity
 
-Testing on different devices has been done to text the responsitivity of the game. On smaller screen sizes the game functions have been shrunk to fit in the screen and still leave enough space for the game area for the target. This can be noted as the gameplay will be seen on the Am I responsive webiste below. The screen sizes were also tested throughout production by using Chrome development and chosing different screen sizes to check on.
+Testing on different devices has been done to test the responsitivity of the game. On smaller screen sizes the game functions have been shrunk to fit in the screen and still leave enough space for the game area for the target. This can be noted as the gameplay will be seen on the Am I responsive webiste below. The screen sizes were also tested throughout production by using Chrome development and chosing different screen sizes to check on.
 
-[Smash The Simpson](./assets/images/amiresponsive.png)
+![Smash The Simpson](./assets/images/amiresponsive.png)
 
-###
-A bug that had been recurring in the game was the score incrementing. The core would increment by 1 for the first round and 2 for the second and so on. The player was also able to still get points after the timer had finished. To fix this a score incrementing function was created, and a if statement was used in it. Along with adding and removing an event listener for the function incrementing score and then creating a new incrementing score.
+### Bugs 
 
-Another bug that hda been faced was creating level two.
+A bug that had been recurring in the game was the score incrementing. The score would increment by 1 for the first round and 2 for the second and so on. The player was also able to still get points after the timer had finished. To fix this a score incrementing function was created, and a if statement was used in it. Along with adding and removing an event listener for the function incrementing score and then creating a new incrementing score.
+
+Another bug that had been faced was creating level two.
 
 Lastly a bug that had to be fixed was the timer, the timer would continue decreasing past 0. So to fix this a new function was created outside the game and linked to in the intervalID.
-HTML
 
+### Unfixed bugs
+To the best of my knowledge there are no known bugs or any left unfixed.
+
+#### CSS validator
 * No errors were returned when passing through the official W3C validator CSS
 ![W3C Validator](./assets/images/css-validator.png)
 
+### HTML Validator
 * No errors were found when passing through the official Html validator
 ![HTML Validator](./assets/images/w3c-html.png)
 
-* No erros were found when validating website via the link 
+* No errors were found when validating website via the link 
 ![Validator HTML & CSS](./assets/images/cssvalidator.png)
 
-* JSHint has not shoown no problems with the Javascript code. JSHint had warned of two unused variables, however they were called in the index.html file. The codes it has been used in from the HTML file are referenced below:
+* JSHint has not shown no problems with the Javascript code. JSHint had warned of two unused variables, however they were called in the index.html file. The codes it has been used in from the HTML file are referenced below:
   - '< button id="ok" onclick="hide()">Ok< /button>'
   - '< button id="instructions" onclick="instructions()">Instructions< /button>'
 ![JSHint](./assets/images/JSHint.png)
